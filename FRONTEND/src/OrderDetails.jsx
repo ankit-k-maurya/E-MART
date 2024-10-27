@@ -26,7 +26,6 @@ const StyledTableRow = styled(TableRow)(({ theme }) => ({
     '&:nth-of-type(odd)': {
         backgroundColor: theme.palette.action.hover,
     },
-    // hide last border
     '&:last-child td, &:last-child th': {
         border: 0,
     },
@@ -46,7 +45,6 @@ export default function OrderDetails  () {
         const CustomerID = claims.CustomerID;
 
         const response = await axios.get('/GetOrderdetails/' + CustomerID);
-        // console.log('response ',response )
         setResponseOrderItem(response);
        }
         fetchData();
