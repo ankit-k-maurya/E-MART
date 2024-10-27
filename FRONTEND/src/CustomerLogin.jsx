@@ -72,7 +72,6 @@ const CustomerLogin = () => {
                         <br />
                         <button type='submit'>Submit</button>
                     </form>
-                    {/* <button onClick={ registration }> Click Registration</button> */}
                 </div>
             </div>
         </>
