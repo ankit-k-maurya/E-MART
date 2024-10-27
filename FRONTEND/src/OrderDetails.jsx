@@ -72,7 +72,7 @@ export default function OrderDetails  () {
                     </TableRow>
                   </TableHead>
                   <TableBody>
-                  {Details.map((curElem) => {
+                  {Details.map(() => (curElem) => {
                             const { fullname, productname, quantity, sumamount } = curElem;
                         return(
                             <>
