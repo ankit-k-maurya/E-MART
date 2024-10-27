@@ -2,8 +2,7 @@ import express from 'express';
 import cookieParser from 'cookie-parser';
 import cros from 'cors';
 import bodyParser from 'body-parser';
-import {sendData,BulidSchedule,getScheduleDetails,UpdateScheduleDetail,deleteSchedule,BulidImage,Bulidcustomer,CustomerVerification,BulidCategory,Bulidproduct,Bulidorder,BulidOrderItem,findProductDetails,CustomerOrderDetails} from './midlwareorm.js';
-// import { DELETE } from 'sequelize/lib/query-types';
+import {sendData,BulidImage,Bulidcustomer,CustomerVerification,BulidCategory,Bulidproduct,Bulidorder,BulidOrderItem,findProductDetails,CustomerOrderDetails} from './midlwareorm.js';
 
 const app = express ();
 const port = 8000;
@@ -17,22 +16,6 @@ const CorsOptions = {
 
 app.use(cookieParser())
 app.use (cros(CorsOptions))
-
-// app.use(function(req, res, next) {
-    // res.header("Access-Control-Allow-Credentials", true);
-    // res.header(" Access-Control-Allow-Methods ",patch)
-    // next();
-// });
-
-console.log( 'res',CorsOptions)
-
-app.post('/CreateSchedule',BulidSchedule,sendData)
-
-app.get('/GetSchedule',getScheduleDetails,sendData)
-
-app.patch('/UpdateSchedule/:ScheduleID',UpdateScheduleDetail,sendData)
-
-app.delete('/DeleteSchedule/:ScheduleID',deleteSchedule,sendData)
 
 app.get('/CreateImage/:id',BulidImage,sendData)
 
