@@ -55,7 +55,7 @@ export default function OrderDetails  () {
         console.log('data',ResponseOrderItem.data)
         const Details = ResponseOrderItem.data.result[0];
         console.log('Details',Details)
-        Details.map((curElem) => {
+        Details.map( () => (curElem) => {
             const { fullname, productname, quantity, sumamount } = curElem;
             Data(fullname, productname, quantity, sumamount)
         });
