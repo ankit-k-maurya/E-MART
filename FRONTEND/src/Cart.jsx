@@ -4,6 +4,7 @@ import * as jose from 'jose';
 import { FaIndianRupeeSign } from "react-icons/fa6";
 import { MdDeleteForever } from "react-icons/md";
 import { useNavigate } from 'react-router-dom';
+import './style.css';
 
 const Cart = () => {
     const navigate = useNavigate();
