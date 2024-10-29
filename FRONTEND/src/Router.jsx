@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Mart from './Mart'
-import Cart from './Cart'
-import CustomerLogin from "./CustomerLogin";
-import CustomerReg from './CustomerReg';
-import OrderDetails from './OrderDetails';
+import Mart from './Mart.jsx'
+import Cart from './Cart.jsx'
+import CustomerLogin from "./CustomerLogin.jsx";
+import CustomerReg from './CustomerReg.jsx';
+import OrderDetails from './OrderDetails.jsx';
 
 const Router = () => {
      return(
