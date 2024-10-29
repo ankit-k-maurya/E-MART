@@ -9,8 +9,6 @@ const CustomerLogin = () => {
     const navigate = useNavigate();
     const [EmailID, setEmailID] = useState();
     const [Password, setPassword] = useState();
-
-    // const registration = () => navigate('/CustomerReg')
        
     const setCookie = (cname, cvalue, exdays) => {
         const d = new Date();
